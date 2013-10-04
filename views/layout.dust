@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			{+title/}
+		</title>
+		<link href="/css/flat-ui/css/flat-ui.css" rel="stylesheet"/>
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		{+prebase/}
+		{+include/}
+
+	</head>
+
+	<body>
+		{+body/}
+		<script src='/js/min/base.min.js'></script>
+		{+script/}
+	</body>
+
+</html>

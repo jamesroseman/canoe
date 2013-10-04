@@ -1,0 +1,10 @@
+{!
+	<!-- This chunk of code can be uncommented for the Typeahead search bar module. -->
+
+<div id="_main" class="main-search">
+	<div id="sb_main" class="searchbox_main">
+		<input id="sb_input" class="typeahead tt-query main-tt todo-search" type="search" placeholder="Start typing to search..." autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;">
+	</div>
+
+</div>
+!}
