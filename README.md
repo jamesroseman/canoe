@@ -3,7 +3,7 @@ canoe
 
 Restaurant and hotel finder for the stuck traveller.
 
-Canoe is a Google Maps-based web application that allows users to see what restaurants and hotels are around various hotels.
+Canoe is a Google Maps-based web application that allows users to see what restaurants and hotels are around various airports.
 
 Interface
 ----------
