@@ -214,17 +214,21 @@ var initialize = function () {
 	loadRedisMarkers(map, lat+','+lng, 'food', 'red');
 
 	// ATTN: This section is to query Yelp and cache markers. Limited to 100 geo-locs
-	//storeRedisMarkers('33.6367,-84.4281', 'food', 'icon-food', 'red');
-	//storeRedisMarkers('33.6367,-84.4281', 'hotel', 'icon-home', 'blue');
+	var storeMarks = true;
 
-	//storeRedisMarkers('40.6397,-73.7789', 'food', 'icon-food', 'red');
-	//storeRedisMarkers('40.6397,-73.7789', 'hotel', 'icon-home', 'blue');
+	if (storeMarks) {
+		storeRedisMarkers('33.6367,-84.4281', 'food', 'icon-food', 'red');
+		storeRedisMarkers('33.6367,-84.4281', 'hotel', 'icon-home', 'blue');
 
-	// storeRedisMarkers('42.3631,-71.0064', 'food', 'icon-food', 'red');
-	// storeRedisMarkers('42.3631,-71.0064', 'hotel', 'icon-home', 'blue');
+		storeRedisMarkers('40.6397,-73.7789', 'food', 'icon-food', 'red');
+		storeRedisMarkers('40.6397,-73.7789', 'hotel', 'icon-home', 'blue');
 
-	// storeRedisMarkers('33.9425,-118.4081', 'food', 'icon-food', 'red');
-	// storeRedisMarkers('33.9425,-118.4081', 'hotel', 'icon-home', 'blue');
+		storeRedisMarkers('42.3631,-71.0064', 'food', 'icon-food', 'red');
+		storeRedisMarkers('42.3631,-71.0064', 'hotel', 'icon-home', 'blue');
+
+		storeRedisMarkers('33.9425,-118.4081', 'food', 'icon-food', 'red');
+		storeRedisMarkers('33.9425,-118.4081', 'hotel', 'icon-home', 'blue');
+	}
 
 	// Filter responses
 	socket.on('filterRes', function (term, isActive) {
