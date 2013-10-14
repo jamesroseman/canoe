@@ -1,0 +1,3 @@
+grunt sass &&
+grunt uglify &&
+sudo grunt start
