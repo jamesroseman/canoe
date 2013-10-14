@@ -29,7 +29,7 @@ var getRatingHTML = function (rating) {
 		emptyStar,
 	];
 
-	for (var i = 0; i <= rat; i+=0.5) {
+	for (var i = 0; i < rat; i+=0.5) {
 		var index = Math.floor(i);
 
 		if (stars[index] == emptyStar) {
