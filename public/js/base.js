@@ -187,6 +187,7 @@ var loadRedisMarkers = function (map, location, term, color) {
 
 // Takes in a location, queries the API for markers, and stores markers in Redis
 var storeRedisMarkers = function (location, term, icon, color) {
+	console.log(location, term, icon, color);
 	socket.emit('redisStoreReq', location, term, icon, color);
 	socket.on('redisStoreRes', function () {
 		console.log('stored');
@@ -213,7 +214,7 @@ var initialize = function () {
 	loadRedisMarkers(map, lat+','+lng, 'food', 'red');
 
 	// ATTN: This section is to query Yelp and cache markers. Limited to 100 geo-locs
-	storeRedisMarkers('33.6367,-84.4281', 'food', 'icon-food', 'red');
+	//storeRedisMarkers('33.6367,-84.4281', 'food', 'icon-food', 'red');
 	//storeRedisMarkers('33.6367,-84.4281', 'hotel', 'icon-home', 'blue');
 
 	//storeRedisMarkers('40.6397,-73.7789', 'food', 'icon-food', 'red');
