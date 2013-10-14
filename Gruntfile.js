@@ -47,7 +47,7 @@ module.exports = function(grunt) {
         // However, if you used it on every page, it'd make sense to add those dependencies to the base.
         files: {
           'public/js/min/base.min.js': ['public/js/lib/jquery-1.9.1.min.js', 'public/js/lib/underscore-min.js', 'public/js/base.js'],
-          'public/js/min/index.min.js': ['public/js/lib/typeahead.js', 'public/js/lib/hogan-2.0.0.js', 'public/js/index.js']
+          'public/js/min/index.min.js': ['public/js/airports.js', 'public/js/lib/hogan-2.0.0.js', 'public/js/index.js', 'public/js/filters.js']
         }
       }
     },

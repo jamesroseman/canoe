@@ -42,7 +42,7 @@ var getGeocode = function (result, eventEmitter) {
 	});
 };
 
-exports.getGeocodes = function (results, eventEmitter) {
+exports.getGeocodes = function (results, term, icon, color, eventEmitter) {
 	var i = results.length-1;
 
 	var next = function (results, i) {
@@ -65,6 +65,9 @@ exports.getGeocodes = function (results, eventEmitter) {
 				results[i].coords = true;
 				results[i].lat = lat;
 				results[i].lon = lon;
+				results[i].term = term;
+				results[i].icon = icon;
+				results[i].color = color;
 			}
 			next(results, i);
 		});

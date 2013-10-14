@@ -10,6 +10,8 @@
 {/title}
 
 {<body}
+	{>"airports" /}
+	{>"filters" /}
 	<div id="map-canvas"></div>
 	{! <div class="ip_addr" style="display: none;">{ip}</div> To be used for production, won't work on local !}
 	<div class="ip_addr" style="display: none;">localhost</div>
