@@ -1,0 +1,45 @@
+.info-window {
+	width: 165px;
+	text-align: center;
+
+	.info-name {
+		font-size: 14px;
+	}
+
+	.info-icon {
+		font-size: 18px;
+	}
+
+	.info-url {
+		background-color: #eee;
+		border: 1px solid #bbb;
+		border-radius: 4px;
+		margin-bottom: 10px;
+		cursor: pointer;
+	}
+
+	.info-name, a {
+		text-decoration: none;
+		color: #34495e;
+	}
+
+	.info-url:active {
+		background-color: #999;
+	}
+
+	.info-text {
+		color: #999;
+		font-style: italic;
+		font-size: 12px;
+	}
+
+	.info-img {
+		max-height: 100px;
+		max-width: 100px;
+	}
+}
+
+.full {
+	padding-right: 7px;
+	border-right: 1px solid #aaa;
+}

@@ -1,0 +1,3 @@
+<h1 class='info info-name'>{name}</h1>
+<i class={icon}></i>
+<p class='info-rating'>{rating}</p>

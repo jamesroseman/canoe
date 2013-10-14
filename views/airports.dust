@@ -1,0 +1,14 @@
+<div class="airportFilters">
+	<div id="bos" class="airport-filter">
+		BOS
+	</div>
+	<div id="jfk" class="airport-filter">
+		JFK
+	</div>
+	<div id="atl" class="airport-filter">
+		ATL
+	</div>
+	<div id="lax" class="airport-filter">
+		LAX
+	</div>
+</div>

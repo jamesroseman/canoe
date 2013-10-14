@@ -1,0 +1,8 @@
+<div class="filters">
+	<div id="food" class="filter active">
+		<i class="icon-food"></i>
+	</div>
+	<div id="hotel" class="filter active">
+		<i class="icon-home"></i>
+	</div>
+</div>

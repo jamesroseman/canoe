@@ -1,0 +1,64 @@
+$pressed: #999;
+$restPressed: #c9828c;
+$hotPressed: #8f97d6;
+
+.active#food {
+	background-color: $restPressed;
+}
+
+#food:active {
+	background-color: $pressed;
+}
+
+.active#hotel {
+	background-color: $hotPressed;
+}
+
+#hotel:active {
+	background-color: $pressed;
+}
+
+.filters {
+	position: absolute;
+	z-index: 1;
+	font-size: 22px;
+	border: 1px solid #bbb;
+
+	top: 10px;
+	right: 10px;
+
+	opacity: 0.80;
+	color: #222;
+
+	width: 23px;
+	text-align: center;
+	background-color: #eee;
+
+	cursor: pointer;
+
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-ms-border-radius: 4px;
+	border-radius: 4px;
+
+	overflow: hidden;
+
+	.filter {
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #aaa;
+		padding-top: 1px;
+		padding-bottom: 1px;
+	}
+
+	:active {
+		background-color: $pressed;
+	}
+
+	:first-child {
+		border-top: none;
+	}
+
+	:last-child {
+		border-bottom: none;
+	}
+}
